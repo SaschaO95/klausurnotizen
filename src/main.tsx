@@ -6,22 +6,25 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Dashboard } from "./pages/Dashboard";
 import { RouterPage } from "./pages/router";
 
-const router = createBrowserRouter([
-  {
-    path: "/klausurnotizen",
-    element: <App />,
-    children: [
-      {
-        path: "",
-        element: <Dashboard />,
-      },
-      {
-        path: "/router",
-        element: <RouterPage />,
-      },
-    ],
-  },
-]);
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+      children: [
+        {
+          path: "",
+          element: <Dashboard />,
+        },
+        {
+          path: "/router",
+          element: <RouterPage />,
+        },
+      ],
+    },
+  ],
+  { basename: "/klausurnotizen" },
+);
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
