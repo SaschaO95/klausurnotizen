@@ -8,7 +8,7 @@ import { RouterPage } from "./pages/router";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/klausurnotizen",
     element: <App />,
     children: [
       {

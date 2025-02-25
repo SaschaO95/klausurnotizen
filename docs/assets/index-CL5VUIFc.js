@@ -91,4 +91,4 @@ Please change the parent <Route path="${Z}"> to <Route path="${Z==="/"?"*":`${Z}
 	},
 ]);`}),Me.jsx("h1",{className:"text-4xl",children:"Router einbinden"}),Me.jsx(zn,{text:`<StrictMode>
 	<RouterProvider router={router} />
-</StrictMode>`}),Me.jsx("span",{className:"text-red-500",children:"Wichtig!!! RouterProvider im Strictmode nicht vergessen"})]})})}const Eg=ng([{path:"/",element:Me.jsx(pg,{}),children:[{path:"",element:Me.jsx(Sg,{})},{path:"/router",element:Me.jsx(bg,{})}]}]);hy.createRoot(document.getElementById("root")).render(Me.jsx(C.StrictMode,{children:Me.jsx(yg,{router:Eg})}));
+</StrictMode>`}),Me.jsx("span",{className:"text-red-500",children:"Wichtig!!! RouterProvider im Strictmode nicht vergessen"})]})})}const Eg=ng([{path:"/klausurnotizen",element:Me.jsx(pg,{}),children:[{path:"",element:Me.jsx(Sg,{})},{path:"/router",element:Me.jsx(bg,{})}]}]);hy.createRoot(document.getElementById("root")).render(Me.jsx(C.StrictMode,{children:Me.jsx(yg,{router:Eg})}));
