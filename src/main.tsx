@@ -23,7 +23,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/klausurnotizen" },
+  // { basename: "/klausurnotizen" },
 );
 
 createRoot(document.getElementById("root")!).render(
