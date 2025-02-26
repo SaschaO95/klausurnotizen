@@ -12,7 +12,7 @@ export function CodeBlock({ text }: CodeBlockProps) {
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
-      setTimeout(() => setCopied(false), 2000); // Kopierstatus nach 2 Sekunden zurücksetzen
+      setTimeout(() => setCopied(false), 2000);
     } catch (err) {
       console.error("Fehler beim Kopieren: ", err);
     }
