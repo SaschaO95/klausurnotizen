@@ -1,4 +1,3 @@
-import { Code } from "lucide-react";
 import { CodeBlock } from "../components/CodeBlock/codeblock";
 
 export function QueryPage() {
