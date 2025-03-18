@@ -2,16 +2,16 @@ import { NavLink } from "react-router-dom";
 
 export function Navbar() {
   return (
-    <nav className="flew-row top-2 left-2 flex w-full items-center justify-between p-4 text-xl">
+    <nav className="flew-row top-2 left-2 flex w-full items-center justify-between bg-gradient-to-r from-violet-500 to-blue-400 p-4 text-xl">
       <NavLink className="text-4xl" to={"/"}>
         🦉
       </NavLink>
-      <div>
-        <NavLink
-          to={"/router"}
-          className="w-fit rounded-2xl bg-teal-300 px-6 py-2"
-        >
+      <div className="flex flex-row gap-2">
+        <NavLink to={"/router"} className="LinkButton">
           Router
+        </NavLink>
+        <NavLink to={"/query"} className="LinkButton">
+          Query
         </NavLink>
       </div>
     </nav>

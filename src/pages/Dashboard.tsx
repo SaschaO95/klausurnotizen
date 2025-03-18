@@ -2,8 +2,8 @@ import { CodeBlock } from "../components/CodeBlock/codeblock";
 
 export function Dashboard() {
   return (
-    <div className="flex min-h-screen w-full">
-      <div className="mt-10 ml-2 flex flex-col gap-2">
+    <div className="Pages">
+      <div className="mt-10 ml-2 flex w-full flex-col items-center gap-2">
         <h1 className="text-6xl">Notizen Sascha O</h1>
         <div className="flex flex-row"></div>
         <span>Vorlage neue Page mit Abstand</span>
