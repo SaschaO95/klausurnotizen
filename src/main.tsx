@@ -6,6 +6,8 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Dashboard } from "./pages/Dashboard";
 import { RouterPage } from "./pages/router";
 import { QueryPage } from "./pages/query";
+import { UseMutationPage } from "./pages/useMutation";
+import { ZustandPage } from "./pages/zustand";
 
 const router = createBrowserRouter(
   [
@@ -22,8 +24,16 @@ const router = createBrowserRouter(
           element: <RouterPage />,
         },
         {
-          path: "query",
+          path: "/query",
           element: <QueryPage />,
+        },
+        {
+          path: "/useMutation",
+          element: <UseMutationPage />,
+        },
+        {
+          path: "/zustand",
+          element: <ZustandPage />,
         },
       ],
     },

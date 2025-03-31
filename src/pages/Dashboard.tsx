@@ -6,13 +6,16 @@ export function Dashboard() {
       <div className="mt-10 ml-2 flex w-full flex-col items-center gap-2">
         <h1 className="text-6xl">Notizen Sascha O</h1>
         <div className="flex flex-row"></div>
-        <span>Vorlage neue Page mit Abstand</span>
+        <span>Vorlage neue Page</span>
         <CodeBlock
-          text={`<div className="flex min-h-screen w-full">
-    <div className="mt-10 ml-2 flex flex-col gap-2">
+          text={`<div className="Pages">
+    <div className="PagesInhalt">
+      <div className="InhaltsBlock"></div>
     </div>
-</div>`}
+  </div>;`}
         />
+        <span>Vorlage Überschrift</span>
+        <CodeBlock text={`<h1 className="text-4xl">Example Header</h1>`} />
         <span>Vorlage Codeblock</span>
         <CodeBlock
           text={`<div className="rounded-lg bg-gray-900 p-4">

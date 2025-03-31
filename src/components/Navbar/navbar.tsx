@@ -13,6 +13,12 @@ export function Navbar() {
         <NavLink to={"/query"} className="LinkButton">
           Query
         </NavLink>
+        <NavLink to={"/useMutation"} className="LinkButton">
+          UseMutation
+        </NavLink>
+        <NavLink to={"/zustand"} className="LinkButton">
+          Zustand
+        </NavLink>
       </div>
     </nav>
   );
