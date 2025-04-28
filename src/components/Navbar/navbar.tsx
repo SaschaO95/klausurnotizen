@@ -19,6 +19,9 @@ export function Navbar() {
         <NavLink to={"/zustand"} className="LinkButton">
           Zustand
         </NavLink>
+        <NavLink to={"/customhook"} className="LinkButton">
+          Custom Hooks
+        </NavLink>
       </div>
     </nav>
   );

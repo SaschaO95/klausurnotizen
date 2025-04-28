@@ -8,6 +8,7 @@ import { RouterPage } from "./pages/router";
 import { QueryPage } from "./pages/query";
 import { UseMutationPage } from "./pages/useMutation";
 import { ZustandPage } from "./pages/zustand";
+import { CustomHookPage } from "./pages/customhook";
 
 const router = createBrowserRouter(
   [
@@ -34,6 +35,10 @@ const router = createBrowserRouter(
         {
           path: "/zustand",
           element: <ZustandPage />,
+        },
+        {
+          path: "/customhook",
+          element: <CustomHookPage />,
         },
       ],
     },
