@@ -9,6 +9,7 @@ import { QueryPage } from "./pages/query";
 import { UseMutationPage } from "./pages/useMutation";
 import { ZustandPage } from "./pages/zustand";
 import { CustomHookPage } from "./pages/customhook";
+import { UseRefPage } from "./pages/useref";
 
 const router = createBrowserRouter(
   [
@@ -39,6 +40,10 @@ const router = createBrowserRouter(
         {
           path: "/customhook",
           element: <CustomHookPage />,
+        },
+        {
+          path: "/useref",
+          element: <UseRefPage />,
         },
       ],
     },

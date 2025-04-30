@@ -22,6 +22,9 @@ export function Navbar() {
         <NavLink to={"/customhook"} className="LinkButton">
           Custom Hooks
         </NavLink>
+        <NavLink to={"/useref"} className="LinkButton">
+          useRef
+        </NavLink>
       </div>
     </nav>
   );

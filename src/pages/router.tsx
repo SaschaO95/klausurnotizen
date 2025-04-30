@@ -51,6 +51,8 @@ export function RouterPage() {
             Die folgenden Schritte in der{" "}
             <span className="text-red-500">app.tsx</span> vornehmen
           </span>
+          <span>Outlet import, ist manchmal nicht automatisch</span>
+          <CodeBlock text={`import { Outlet } from "react-router-dom";`} />
           <CodeBlock
             text={`export function App() {
   return (
