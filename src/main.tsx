@@ -10,6 +10,12 @@ import { UseMutationPage } from "./pages/useMutation";
 import { ZustandPage } from "./pages/zustand";
 import { CustomHookPage } from "./pages/customhook";
 import { UseRefPage } from "./pages/useref";
+import { TerminalPage } from "./pages/terminal";
+import { DockerComposePage } from "./pages/dockercompose";
+import { DockerFilePage } from "./pages/filedocker";
+import { JsonPage } from "./pages/json";
+import { DrizzlePage } from "./pages/drizzle";
+import { ZodPage } from "./pages/zod";
 
 const router = createBrowserRouter(
   [
@@ -45,10 +51,34 @@ const router = createBrowserRouter(
           path: "/useref",
           element: <UseRefPage />,
         },
+        {
+          path: "/terminal",
+          element: <TerminalPage />,
+        },
+        {
+          path: "/compose",
+          element: <DockerComposePage />,
+        },
+        {
+          path: "/dockerfile",
+          element: <DockerFilePage />,
+        },
+        {
+          path: "/json",
+          element: <JsonPage />,
+        },
+        {
+          path: "/drizzle",
+          element: <DrizzlePage />,
+        },
+        {
+          path: "zod",
+          element: <ZodPage />,
+        },
       ],
     },
   ],
-  // { basename: "/klausurnotizen" },
+  { basename: "/klausurnotizen" },
 );
 
 createRoot(document.getElementById("root")!).render(

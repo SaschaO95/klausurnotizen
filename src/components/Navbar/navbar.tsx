@@ -25,6 +25,9 @@ export function Navbar() {
         <NavLink to={"/useref"} className="LinkButton">
           useRef
         </NavLink>
+        <NavLink to={"/terminal"} className="LinkButton">
+          Probeklausur
+        </NavLink>
       </div>
     </nav>
   );
